@@ -134,4 +134,6 @@ docker run -i ${tty-} ${rm} \
   --env="CIRCLE_NODE_INDEX=${CIRCLE_NODE_INDEX-0}" \
   --env="CIRCLE_NODE_TOTAL=${CIRCLE_NODE_TOTAL-1}" \
   --env="GOTRACEBACK=${GOTRACEBACK-all}" \
+  --env="GOOGLE_PROJECT=${GOOGLE_PROJECT}" \
+  --env="GOOGLE_CREDENTIALS=${GOOGLE_CREDENTIALS}" \
   "${image}:${version}" "$@"
